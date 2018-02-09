@@ -15,4 +15,4 @@ if __name__ == '__main__':
                 else:
                     print('error: ' + timestamp_str)
             else:
-                print('error: ' + dtint)
+                print('error: the number of seconda not exist!')

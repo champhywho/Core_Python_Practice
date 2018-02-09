@@ -1,3 +1,6 @@
+'''
+    匹配信用卡（CC）号码，并验证格式是否正确
+'''
 import re
 
 def get_CCNumber(ccNumber_with_hyphen):

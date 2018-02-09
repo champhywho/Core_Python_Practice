@@ -1,8 +1,13 @@
+'''
+    获取对象类型
+'''
 import re
 
 def getObjectType(obj):
-    type_str = type(obj)
-    obj_type = re.match('<class \'(.+)\'>', str(type_str))
+    type_str = str(type(obj))
+    print(type_str)
+    # obj_type = re.match('<class \'(.+)\'>', type_str)
+    obj_type = re.search('\'(.+)\'', type_str)
     return obj_type.group(1)
 
 if __name__ == '__main__':
